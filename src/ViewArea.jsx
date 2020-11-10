@@ -223,8 +223,6 @@ export class ViewArea extends Component {
     const imgLoader = new THREE.ImageLoader();
     imgLoader.load('https://threejsfundamentals.org/threejs/resources/images/heightmap-96x64.png', image => createHeightmap(image, this.customMaterial, this.scene));
 
-    addLight(this.scene, -1, 2, 4);
-    addLight(this.scene,1, 2, -2);
 
     this.options = {
       color: "#ffae23",
